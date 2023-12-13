@@ -1,0 +1,466 @@
+13-12-2023 07:50:31 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 07:50:31 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 07:50:31 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 07:50:31 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 07:50:31 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 07:50:31 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 07:50:31 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 07:50:31 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls (id, created_at, original_url, deleted) VALUES ($1::UUID, $2::TIMESTAMP WITHOUT TIME ZONE, $3::VARCHAR, $4::BOOLEAN)
+13-12-2023 07:50:31 : INFO  base  _exec_single_context : 1906 - [generated in 0.00059s] (UUID('b33bdf94-8884-4c37-8d3e-c7541689c02e'), datetime.datetime(2023, 12, 13, 16, 50, 31, 534557), 'https://www.google.com/', False)
+13-12-2023 07:50:31 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 07:50:31 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 07:50:31 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 07:50:31 : INFO  base  _exec_single_context : 1906 - [generated in 0.00015s] (UUID('b33bdf94-8884-4c37-8d3e-c7541689c02e'),)
+13-12-2023 07:50:31 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 07:57:37 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 07:57:37 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 07:57:37 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 07:57:37 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 07:57:37 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 07:57:37 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 07:57:37 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 07:57:37 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls (id, created_at, original_url, deleted) VALUES ($1::UUID, $2::TIMESTAMP WITHOUT TIME ZONE, $3::VARCHAR, $4::BOOLEAN)
+13-12-2023 07:57:37 : INFO  base  _exec_single_context : 1906 - [generated in 0.00020s] (UUID('cc028aa9-e66a-483f-8670-7330e217248d'), datetime.datetime(2023, 12, 13, 16, 57, 37, 940397), 'https://www.googl122e.com/', False)
+13-12-2023 07:57:37 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 07:57:37 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 07:57:37 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 07:57:37 : INFO  base  _exec_single_context : 1906 - [generated in 0.00014s] (UUID('cc028aa9-e66a-483f-8670-7330e217248d'),)
+13-12-2023 07:57:37 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 07:58:54 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 07:58:54 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 07:58:54 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 07:58:54 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 07:58:54 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 07:58:54 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 07:58:54 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 07:58:54 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls (id, created_at, original_url, deleted) VALUES ($1::UUID, $2::TIMESTAMP WITHOUT TIME ZONE, $3::VARCHAR, $4::BOOLEAN)
+13-12-2023 07:58:54 : INFO  base  _exec_single_context : 1906 - [generated in 0.00021s] (UUID('71f792b3-a51d-481f-a351-50e691c926c6'), datetime.datetime(2023, 12, 13, 16, 58, 54, 57440), 'https://www.googl122e.com/', False)
+13-12-2023 07:58:54 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 08:16:33 : INFO  main  <module> : 20 - Start server on http://127.0.0.1:8080
+13-12-2023 08:20:14 : INFO  main  <module> : 20 - Start server on http://127.0.0.1:8080
+13-12-2023 08:22:43 : INFO  main  <module> : 20 - Start server on http://127.0.0.1:8080
+13-12-2023 08:23:02 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 08:23:02 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 08:23:02 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 08:23:02 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 08:23:02 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 08:23:02 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 08:23:02 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:23:02 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls (id, created_at, original_url, deleted) VALUES ($1::UUID, $2::TIMESTAMP WITHOUT TIME ZONE, $3::VARCHAR, $4::BOOLEAN)
+13-12-2023 08:23:02 : INFO  base  _exec_single_context : 1906 - [generated in 0.00023s] (UUID('2361b80f-5078-46a2-80b4-5e68d1a84814'), datetime.datetime(2023, 12, 13, 17, 23, 2, 816344), 'https://www.googl1311223222e.com/', False)
+13-12-2023 08:23:02 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 08:23:02 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:23:02 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 08:23:02 : INFO  base  _exec_single_context : 1906 - [generated in 0.00016s] (UUID('2361b80f-5078-46a2-80b4-5e68d1a84814'),)
+13-12-2023 08:23:02 : INFO  url  create_short_url : 38 - Create new url 2361b80f-5078-46a2-80b4-5e68d1a84814
+13-12-2023 08:23:02 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 08:23:23 : INFO  main  <module> : 20 - Start server on http://127.0.0.1:8080
+13-12-2023 08:23:25 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 08:23:25 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 08:23:25 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 08:23:25 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 08:23:25 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 08:23:25 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 08:23:25 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:23:25 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls (id, created_at, original_url, deleted) VALUES ($1::UUID, $2::TIMESTAMP WITHOUT TIME ZONE, $3::VARCHAR, $4::BOOLEAN)
+13-12-2023 08:23:25 : INFO  base  _exec_single_context : 1906 - [generated in 0.00026s] (UUID('9deab368-e50b-46e9-8b99-e9f76ba5b713'), datetime.datetime(2023, 12, 13, 17, 23, 25, 402633), 'https://www.googl1311223222e.com/', False)
+13-12-2023 08:23:25 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 08:26:45 : INFO  main  <module> : 20 - Start server on http://127.0.0.1:8080
+13-12-2023 08:26:47 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 08:26:47 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 08:26:47 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 08:26:47 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 08:26:47 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 08:26:47 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 08:26:47 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:26:47 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls (id, created_at, original_url, deleted) VALUES ($1::UUID, $2::TIMESTAMP WITHOUT TIME ZONE, $3::VARCHAR, $4::BOOLEAN)
+13-12-2023 08:26:47 : INFO  base  _exec_single_context : 1906 - [generated in 0.00027s] (UUID('b1575e26-9e1b-4496-85bc-f17fcf8dade6'), datetime.datetime(2023, 12, 13, 17, 26, 47, 342214), 'https://www.googl1311223222e.com/', False)
+13-12-2023 08:26:47 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 08:26:47 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:26:47 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 08:26:47 : INFO  base  _exec_single_context : 1906 - [generated in 0.00017s] (UUID('b1575e26-9e1b-4496-85bc-f17fcf8dade6'),)
+13-12-2023 08:26:47 : INFO  url  create_short_url : 34 - Create new url b1575e26-9e1b-4496-85bc-f17fcf8dade6
+13-12-2023 08:26:47 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 08:27:16 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 08:27:16 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 08:27:16 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 08:27:16 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 08:27:16 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 08:27:16 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 08:27:16 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:27:16 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls (id, created_at, original_url, deleted) VALUES ($1::UUID, $2::TIMESTAMP WITHOUT TIME ZONE, $3::VARCHAR, $4::BOOLEAN)
+13-12-2023 08:27:16 : INFO  base  _exec_single_context : 1906 - [generated in 0.00021s] (UUID('1d1339dc-90b3-4aa1-90f7-449750ef3b0a'), datetime.datetime(2023, 12, 13, 17, 27, 16, 709963), 'https://www.googl1311223222e.com/', False)
+13-12-2023 08:27:16 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 08:27:16 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:27:16 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 08:27:16 : INFO  base  _exec_single_context : 1906 - [generated in 0.00016s] (UUID('1d1339dc-90b3-4aa1-90f7-449750ef3b0a'),)
+13-12-2023 08:27:16 : INFO  url  create_short_url : 34 - Create new url 1d1339dc-90b3-4aa1-90f7-449750ef3b0a
+13-12-2023 08:27:16 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 08:31:06 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:31:06 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls (id, created_at, original_url, deleted) VALUES ($1::UUID, $2::TIMESTAMP WITHOUT TIME ZONE, $3::VARCHAR, $4::BOOLEAN)
+13-12-2023 08:31:06 : INFO  base  _exec_single_context : 1906 - [cached since 229.5s ago] (UUID('aec90927-2097-4db5-8551-a3a92b797995'), datetime.datetime(2023, 12, 13, 17, 31, 6, 217615), 'http://ya.ru', False)
+13-12-2023 08:31:06 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 08:31:06 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:31:06 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 08:31:06 : INFO  base  _exec_single_context : 1906 - [cached since 229.5s ago] (UUID('aec90927-2097-4db5-8551-a3a92b797995'),)
+13-12-2023 08:31:06 : INFO  url  create_short_url : 34 - Create new url aec90927-2097-4db5-8551-a3a92b797995
+13-12-2023 08:31:06 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 08:32:45 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:32:45 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls (id, created_at, original_url, deleted) VALUES ($1::UUID, $2::TIMESTAMP WITHOUT TIME ZONE, $3::VARCHAR, $4::BOOLEAN)
+13-12-2023 08:32:45 : INFO  base  _exec_single_context : 1906 - [cached since 328.7s ago] (UUID('09d4c2a5-8e25-4eb9-80f4-30e8b74b39ce'), datetime.datetime(2023, 12, 13, 17, 32, 45, 399351), 'http://ya.ru', False)
+13-12-2023 08:32:45 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 08:32:45 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:32:45 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 08:32:45 : INFO  base  _exec_single_context : 1906 - [cached since 328.6s ago] (UUID('09d4c2a5-8e25-4eb9-80f4-30e8b74b39ce'),)
+13-12-2023 08:32:45 : INFO  url  create_short_url : 34 - Create new url 09d4c2a5-8e25-4eb9-80f4-30e8b74b39ce
+13-12-2023 08:32:45 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 08:32:56 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 08:32:56 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 08:32:56 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 08:32:56 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 08:32:56 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 08:32:56 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 08:32:56 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:32:56 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls (id, created_at, original_url, deleted) VALUES ($1::UUID, $2::TIMESTAMP WITHOUT TIME ZONE, $3::VARCHAR, $4::BOOLEAN)
+13-12-2023 08:32:56 : INFO  base  _exec_single_context : 1906 - [generated in 0.00018s] (UUID('7c592fd8-2f89-4fce-9290-a2718be72fb4'), datetime.datetime(2023, 12, 13, 17, 32, 56, 924321), 'http://ya.ru', False)
+13-12-2023 08:32:56 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 08:32:56 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:32:56 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 08:32:56 : INFO  base  _exec_single_context : 1906 - [generated in 0.00031s] (UUID('7c592fd8-2f89-4fce-9290-a2718be72fb4'),)
+13-12-2023 08:32:56 : INFO  url  create_short_url : 34 - Create new url 7c592fd8-2f89-4fce-9290-a2718be72fb4
+13-12-2023 08:32:56 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 08:32:56 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:32:56 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 08:32:56 : INFO  base  _exec_single_context : 1906 - [generated in 0.00026s] ('7c592fd8-2f89-4fce-9290-a2718be72fb4',)
+13-12-2023 08:32:56 : INFO  url  get_origin_url : 20 - Get url 7c592fd8-2f89-4fce-9290-a2718be72fb4
+13-12-2023 08:32:56 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls_clicks (url_id, client_host, client_port, created_at) VALUES ($1::UUID, $2::VARCHAR, $3::INTEGER, $4::TIMESTAMP WITHOUT TIME ZONE) RETURNING urls_clicks.id
+13-12-2023 08:32:56 : INFO  base  _exec_single_context : 1906 - [generated in 0.00022s] (UUID('7c592fd8-2f89-4fce-9290-a2718be72fb4'), '127.0.0.1', 62015, datetime.datetime(2023, 12, 13, 17, 32, 56, 978393))
+13-12-2023 08:32:56 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 08:32:56 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:32:56 : INFO  base  _exec_single_context : 1901 - SELECT urls_clicks.id, urls_clicks.url_id, urls_clicks.client_host, urls_clicks.client_port, urls_clicks.created_at 
+FROM urls_clicks 
+WHERE urls_clicks.id = $1::INTEGER
+13-12-2023 08:32:56 : INFO  base  _exec_single_context : 1906 - [generated in 0.00014s] (6,)
+13-12-2023 08:32:56 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 08:33:18 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:33:18 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 08:33:18 : INFO  base  _exec_single_context : 1906 - [cached since 21.89s ago] ('d4aa102c-cc5c-459f-8c52-b647414445fa',)
+13-12-2023 08:33:18 : INFO  url  get_origin_url : 20 - Get url d4aa102c-cc5c-459f-8c52-b647414445fa
+13-12-2023 08:33:18 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls_clicks (url_id, client_host, client_port, created_at) VALUES ($1::UUID, $2::VARCHAR, $3::INTEGER, $4::TIMESTAMP WITHOUT TIME ZONE) RETURNING urls_clicks.id
+13-12-2023 08:33:18 : INFO  base  _exec_single_context : 1906 - [cached since 21.89s ago] (UUID('d4aa102c-cc5c-459f-8c52-b647414445fa'), '127.0.0.1', 62042, datetime.datetime(2023, 12, 13, 17, 33, 18, 867146))
+13-12-2023 08:33:18 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 08:33:18 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:33:18 : INFO  base  _exec_single_context : 1901 - SELECT urls_clicks.id, urls_clicks.url_id, urls_clicks.client_host, urls_clicks.client_port, urls_clicks.created_at 
+FROM urls_clicks 
+WHERE urls_clicks.id = $1::INTEGER
+13-12-2023 08:33:18 : INFO  base  _exec_single_context : 1906 - [cached since 21.89s ago] (7,)
+13-12-2023 08:33:18 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 08:53:48 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 08:53:48 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 08:53:48 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 08:53:48 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 08:53:48 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 08:53:48 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 08:53:48 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:53:48 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls (id, created_at, original_url, deleted) VALUES ($1::UUID, $2::TIMESTAMP WITHOUT TIME ZONE, $3::VARCHAR, $4::BOOLEAN)
+13-12-2023 08:53:48 : INFO  base  _exec_single_context : 1906 - [generated in 0.00021s] (UUID('0ad10f2f-0925-447b-a30a-c9ee559162ba'), datetime.datetime(2023, 12, 13, 17, 53, 48, 191670), 'https://www.googl1311223222e.com/', False)
+13-12-2023 08:53:48 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 08:53:48 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:53:48 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 08:53:48 : INFO  base  _exec_single_context : 1906 - [generated in 0.00014s] (UUID('0ad10f2f-0925-447b-a30a-c9ee559162ba'),)
+13-12-2023 08:53:48 : INFO  url  create_short_url : 34 - Create new url 0ad10f2f-0925-447b-a30a-c9ee559162ba
+13-12-2023 08:53:48 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 08:54:17 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:54:17 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 08:54:17 : INFO  base  _exec_single_context : 1906 - [generated in 0.00020s] ('0f233099-ecdb-4601-ae87-75c158488967',)
+13-12-2023 08:54:17 : INFO  url  get_origin_url : 20 - Get url 0f233099-ecdb-4601-ae87-75c158488967
+13-12-2023 08:54:17 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls_clicks (url_id, client_host, client_port, created_at) VALUES ($1::UUID, $2::VARCHAR, $3::INTEGER, $4::TIMESTAMP WITHOUT TIME ZONE) RETURNING urls_clicks.id
+13-12-2023 08:54:17 : INFO  base  _exec_single_context : 1906 - [generated in 0.00015s] (UUID('0f233099-ecdb-4601-ae87-75c158488967'), '127.0.0.1', 50503, datetime.datetime(2023, 12, 13, 17, 54, 17, 739685))
+13-12-2023 08:54:17 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 08:54:17 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:54:17 : INFO  base  _exec_single_context : 1901 - SELECT urls_clicks.id, urls_clicks.url_id, urls_clicks.client_host, urls_clicks.client_port, urls_clicks.created_at 
+FROM urls_clicks 
+WHERE urls_clicks.id = $1::INTEGER
+13-12-2023 08:54:17 : INFO  base  _exec_single_context : 1906 - [generated in 0.00015s] (8,)
+13-12-2023 08:54:17 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 08:55:14 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:55:14 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 08:55:14 : INFO  base  _exec_single_context : 1906 - [cached since 56.93s ago] ('82e0b1af-555c-47ab-8a92-330752713bf2',)
+13-12-2023 08:55:14 : INFO  url  get_origin_url : 20 - Get url 82e0b1af-555c-47ab-8a92-330752713bf2
+13-12-2023 08:55:14 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls_clicks (url_id, client_host, client_port, created_at) VALUES ($1::UUID, $2::VARCHAR, $3::INTEGER, $4::TIMESTAMP WITHOUT TIME ZONE) RETURNING urls_clicks.id
+13-12-2023 08:55:14 : INFO  base  _exec_single_context : 1906 - [cached since 56.92s ago] (UUID('82e0b1af-555c-47ab-8a92-330752713bf2'), '127.0.0.1', 59324, datetime.datetime(2023, 12, 13, 17, 55, 14, 663613))
+13-12-2023 08:55:14 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 08:55:14 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:55:14 : INFO  base  _exec_single_context : 1901 - SELECT urls_clicks.id, urls_clicks.url_id, urls_clicks.client_host, urls_clicks.client_port, urls_clicks.created_at 
+FROM urls_clicks 
+WHERE urls_clicks.id = $1::INTEGER
+13-12-2023 08:55:14 : INFO  base  _exec_single_context : 1906 - [cached since 56.92s ago] (9,)
+13-12-2023 08:55:14 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 08:59:02 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:59:02 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 08:59:02 : INFO  base  _exec_single_context : 1906 - [cached since 285.1s ago] ('b75e7d53-334d-464b-a807-76d4f947cfc4',)
+13-12-2023 08:59:02 : INFO  url  get_origin_url : 20 - Get url b75e7d53-334d-464b-a807-76d4f947cfc4
+13-12-2023 08:59:02 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls_clicks (url_id, client_host, client_port, created_at) VALUES ($1::UUID, $2::VARCHAR, $3::INTEGER, $4::TIMESTAMP WITHOUT TIME ZONE) RETURNING urls_clicks.id
+13-12-2023 08:59:02 : INFO  base  _exec_single_context : 1906 - [cached since 285.1s ago] (UUID('b75e7d53-334d-464b-a807-76d4f947cfc4'), '127.0.0.1', 60494, datetime.datetime(2023, 12, 13, 17, 59, 2, 838466))
+13-12-2023 08:59:02 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 08:59:02 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 08:59:02 : INFO  base  _exec_single_context : 1901 - SELECT urls_clicks.id, urls_clicks.url_id, urls_clicks.client_host, urls_clicks.client_port, urls_clicks.created_at 
+FROM urls_clicks 
+WHERE urls_clicks.id = $1::INTEGER
+13-12-2023 08:59:02 : INFO  base  _exec_single_context : 1906 - [cached since 285.1s ago] (10,)
+13-12-2023 08:59:02 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 09:00:12 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 09:00:12 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls (id, created_at, original_url, deleted) VALUES ($1::UUID, $2::TIMESTAMP WITHOUT TIME ZONE, $3::VARCHAR, $4::BOOLEAN)
+13-12-2023 09:00:12 : INFO  base  _exec_single_context : 1906 - [cached since 384.1s ago] (UUID('65566905-d265-4b83-8072-ee10bbf4bbc9'), datetime.datetime(2023, 12, 13, 18, 0, 12, 315263), 'https://www.googl1311223222e.com/', False)
+13-12-2023 09:00:12 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 09:00:12 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 09:00:12 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 09:00:12 : INFO  base  _exec_single_context : 1906 - [cached since 384.2s ago] (UUID('65566905-d265-4b83-8072-ee10bbf4bbc9'),)
+13-12-2023 09:00:12 : INFO  url  create_short_url : 34 - Create new url 65566905-d265-4b83-8072-ee10bbf4bbc9
+13-12-2023 09:00:12 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 09:00:16 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 09:00:16 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls (id, created_at, original_url, deleted) VALUES ($1::UUID, $2::TIMESTAMP WITHOUT TIME ZONE, $3::VARCHAR, $4::BOOLEAN)
+13-12-2023 09:00:16 : INFO  base  _exec_single_context : 1906 - [cached since 388.5s ago] (UUID('00cb097d-35e8-4bb2-b45e-5ab91d55455b'), datetime.datetime(2023, 12, 13, 18, 0, 16, 715496), 'https://www.googl131122553222e.com/', False)
+13-12-2023 09:00:16 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 09:00:16 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 09:00:16 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 09:00:16 : INFO  base  _exec_single_context : 1906 - [cached since 388.5s ago] (UUID('00cb097d-35e8-4bb2-b45e-5ab91d55455b'),)
+13-12-2023 09:00:16 : INFO  url  create_short_url : 34 - Create new url 00cb097d-35e8-4bb2-b45e-5ab91d55455b
+13-12-2023 09:00:16 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 09:39:47 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 09:39:47 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 09:39:47 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 09:39:47 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 09:39:47 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 09:39:47 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 09:39:47 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 09:39:47 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 09:39:47 : INFO  base  _exec_single_context : 1906 - [generated in 0.00016s] ('ddeaa15a-31dc-4637-b856-a4a26ba790c9',)
+13-12-2023 09:39:47 : INFO  url  get_origin_url : 20 - Get url ddeaa15a-31dc-4637-b856-a4a26ba790c9
+13-12-2023 09:39:47 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls_clicks (url_id, client_host, client_port, created_at) VALUES ($1::UUID, $2::VARCHAR, $3::INTEGER, $4::TIMESTAMP WITHOUT TIME ZONE) RETURNING urls_clicks.id
+13-12-2023 09:39:47 : INFO  base  _exec_single_context : 1906 - [generated in 0.00015s] (UUID('ddeaa15a-31dc-4637-b856-a4a26ba790c9'), '127.0.0.1', 65120, datetime.datetime(2023, 12, 13, 18, 39, 47, 693411))
+13-12-2023 09:39:47 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 09:39:47 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 09:39:47 : INFO  base  _exec_single_context : 1901 - SELECT urls_clicks.id, urls_clicks.url_id, urls_clicks.client_host, urls_clicks.client_port, urls_clicks.created_at 
+FROM urls_clicks 
+WHERE urls_clicks.id = $1::INTEGER
+13-12-2023 09:39:47 : INFO  base  _exec_single_context : 1906 - [generated in 0.00031s] (11,)
+13-12-2023 09:39:47 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 10:00:49 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 10:00:49 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:00:49 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 10:00:49 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:00:49 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 10:00:49 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:00:49 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 10:00:49 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls (id, created_at, original_url, deleted) VALUES ($1::UUID, $2::TIMESTAMP WITHOUT TIME ZONE, $3::VARCHAR, $4::BOOLEAN)
+13-12-2023 10:00:49 : INFO  base  _exec_single_context : 1906 - [generated in 0.00031s] (UUID('b49ec8ab-0f26-4921-9077-137b267c95ec'), datetime.datetime(2023, 12, 13, 19, 0, 49, 96886), 'http://ya.ru', False)
+13-12-2023 10:00:49 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 10:00:49 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 10:00:49 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 10:00:49 : INFO  base  _exec_single_context : 1906 - [generated in 0.00016s] (UUID('b49ec8ab-0f26-4921-9077-137b267c95ec'),)
+13-12-2023 10:00:49 : INFO  url  create_short_url : 41 - Multiple create new urls
+13-12-2023 10:00:49 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 10:01:32 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 10:01:32 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:01:32 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 10:01:32 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:01:32 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 10:01:32 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:01:32 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 10:01:32 : INFO  base  _exec_single_context : 1901 - INSERT INTO urls (id, created_at, original_url, deleted) VALUES ($1::UUID, $2::TIMESTAMP WITHOUT TIME ZONE, $3::VARCHAR, $4::BOOLEAN)
+13-12-2023 10:01:32 : INFO  base  _exec_single_context : 1906 - [generated in 0.00019s] (UUID('07528658-5c02-4b81-b3ea-cf8ca3ce6317'), datetime.datetime(2023, 12, 13, 19, 1, 32, 855242), 'http://ya.ru', False)
+13-12-2023 10:01:32 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 10:01:32 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 10:01:32 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 10:01:32 : INFO  base  _exec_single_context : 1906 - [generated in 0.00013s] (UUID('07528658-5c02-4b81-b3ea-cf8ca3ce6317'),)
+13-12-2023 10:01:32 : INFO  url  create_short_url : 41 - Multiple create new urls
+13-12-2023 10:01:32 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 10:02:07 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 10:02:07 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:02:07 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 10:02:07 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:02:07 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 10:02:07 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:02:07 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 10:02:07 : INFO  base  _exec_insertmany_context : 2068 - INSERT INTO urls (id, created_at, original_url, deleted) VALUES ($1::UUID, $2::TIMESTAMP WITHOUT TIME ZONE, $3::VARCHAR, $4::BOOLEAN), ($5::UUID, $6::TIMESTAMP WITHOUT TIME ZONE, $7::VARCHAR, $8::BOOLEAN)
+13-12-2023 10:02:07 : INFO  base  _exec_insertmany_context : 2086 - [generated in 0.00015s (insertmanyvalues) 1/1 (unordered)] (UUID('94a8ac4b-ee39-4f41-9f80-055224f94c79'), datetime.datetime(2023, 12, 13, 19, 2, 7, 64487), 'http://ya.ru', False, UUID('288449cf-2f76-46a2-93c1-64ca1f641ecc'), datetime.datetime(2023, 12, 13, 19, 2, 7, 64487), 'http://ya.ru', False)
+13-12-2023 10:02:07 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 10:02:07 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 10:02:07 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 10:02:07 : INFO  base  _exec_single_context : 1906 - [generated in 0.00020s] (UUID('94a8ac4b-ee39-4f41-9f80-055224f94c79'),)
+13-12-2023 10:02:07 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 10:02:07 : INFO  base  _exec_single_context : 1906 - [cached since 0.001708s ago] (UUID('288449cf-2f76-46a2-93c1-64ca1f641ecc'),)
+13-12-2023 10:02:07 : INFO  url  create_short_url : 41 - Multiple create new urls
+13-12-2023 10:02:07 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 10:42:10 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 10:42:10 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:42:10 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 10:42:10 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:42:10 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 10:42:10 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:42:10 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 10:42:10 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 10:42:10 : INFO  base  _exec_single_context : 1906 - [generated in 0.00020s] ('b10346fe-8b06-4d27-824c-3980ced6641f',)
+13-12-2023 10:42:10 : INFO  url  get_origin_url : 20 - Get url b10346fe-8b06-4d27-824c-3980ced6641f
+13-12-2023 10:42:10 : INFO  url  get_origin_url : 25 - Url is deleted b10346fe-8b06-4d27-824c-3980ced6641f
+13-12-2023 10:42:10 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 10:43:26 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 10:43:26 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 10:43:26 : INFO  base  _exec_single_context : 1906 - [cached since 76.63s ago] ('264f53b3-d649-4a00-8dc5-912c46842c34',)
+13-12-2023 10:43:26 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 10:43:26 : INFO  base  _exec_single_context : 1906 - [cached since 76.63s ago] ('264f53b3-d649-4a00-8dc5-912c46842c34',)
+13-12-2023 10:43:26 : INFO  base  _exec_single_context : 1901 - UPDATE urls SET deleted=$1::BOOLEAN WHERE urls.id = $2::UUID
+13-12-2023 10:43:26 : INFO  base  _exec_single_context : 1906 - [generated in 0.00020s] (True, UUID('264f53b3-d649-4a00-8dc5-912c46842c34'))
+13-12-2023 10:43:26 : INFO  base  _commit_impl : 1134 - COMMIT
+13-12-2023 10:43:26 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 10:43:26 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 10:43:26 : INFO  base  _exec_single_context : 1906 - [generated in 0.00014s] (UUID('264f53b3-d649-4a00-8dc5-912c46842c34'),)
+13-12-2023 10:43:26 : INFO  url  delete_url : 52 - Delete url 264f53b3-d649-4a00-8dc5-912c46842c34
+13-12-2023 10:43:26 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 10:45:35 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 10:45:35 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 10:45:35 : INFO  base  _exec_single_context : 1906 - [cached since 204.8s ago] ('e3fe4e72-18fa-4c60-92f0-4f73e9809497',)
+13-12-2023 10:45:35 : INFO  base  _exec_single_context : 1901 - SELECT count(*) AS count_1 
+FROM urls_clicks 
+WHERE urls_clicks.url_id = $1::UUID
+13-12-2023 10:45:35 : INFO  base  _exec_single_context : 1906 - [generated in 0.00018s] ('e3fe4e72-18fa-4c60-92f0-4f73e9809497',)
+13-12-2023 10:45:35 : INFO  url  get_status : 68 - Get status of url e3fe4e72-18fa-4c60-92f0-4f73e9809497
+13-12-2023 10:45:35 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 10:49:07 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 10:49:07 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:49:07 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 10:49:07 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:49:07 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 10:49:07 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:49:07 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 10:49:07 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 10:49:07 : INFO  base  _exec_single_context : 1906 - [generated in 0.00018s] ('e3fe4e72-18fa-4c60-92f0-4f73e9809497',)
+13-12-2023 10:49:07 : INFO  base  _exec_single_context : 1901 - SELECT urls_clicks.id, urls_clicks.url_id, urls_clicks.client_host, urls_clicks.client_port, urls_clicks.created_at 
+FROM urls_clicks 
+WHERE urls_clicks.url_id = $1::UUID 
+ LIMIT $2::INTEGER OFFSET $3::INTEGER
+13-12-2023 10:49:07 : INFO  base  _exec_single_context : 1906 - [generated in 0.00018s] ('e3fe4e72-18fa-4c60-92f0-4f73e9809497', 10, 0)
+13-12-2023 10:49:07 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 10:52:28 : INFO  main  <module> : 20 - Start server on http://127.0.0.1:8080
+13-12-2023 10:52:49 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 10:52:49 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:52:49 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 10:52:49 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:52:49 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 10:52:49 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:52:49 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 10:52:49 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 10:52:49 : INFO  base  _exec_single_context : 1906 - [generated in 0.00023s] ('b10346fe-8b06-4d27-824c-3980ced6641f',)
+13-12-2023 10:52:49 : INFO  url  get_origin_url : 20 - Get url b10346fe-8b06-4d27-824c-3980ced6641f
+13-12-2023 10:52:49 : INFO  url  get_origin_url : 25 - Url is deleted b10346fe-8b06-4d27-824c-3980ced6641f
+13-12-2023 10:52:49 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 10:53:38 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 10:53:38 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:53:38 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 10:53:38 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:53:38 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 10:53:38 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:53:38 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 10:53:38 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 10:53:38 : INFO  base  _exec_single_context : 1906 - [generated in 0.00016s] ('b10346fe-8b06-4d27-824c-3980ced6641f',)
+13-12-2023 10:53:38 : INFO  url  get_origin_url : 20 - Get url b10346fe-8b06-4d27-824c-3980ced6641f
+13-12-2023 10:53:38 : INFO  url  get_origin_url : 25 - Url is deleted b10346fe-8b06-4d27-824c-3980ced6641f
+13-12-2023 10:53:38 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 10:55:50 : INFO  main  <module> : 20 - Start server on http://127.0.0.1:8080
+13-12-2023 10:55:52 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 10:55:52 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:55:52 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 10:55:52 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:55:52 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 10:55:52 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:55:52 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 10:55:52 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 10:55:52 : INFO  base  _exec_single_context : 1906 - [generated in 0.00023s] ('b10346fe-8b06-4d27-824c-3980ced6641f',)
+13-12-2023 10:55:52 : INFO  url  get_origin_url : 20 - Get url b10346fe-8b06-4d27-824c-3980ced6641f
+13-12-2023 10:55:52 : INFO  url  get_origin_url : 25 - Url is deleted b10346fe-8b06-4d27-824c-3980ced6641f
+13-12-2023 10:55:52 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 10:56:24 : INFO  main  <module> : 18 - Start server on http://127.0.0.1:8080
+13-12-2023 10:57:47 : INFO  main  <module> : 18 - Start server on http://127.0.0.1:8080
+13-12-2023 10:57:52 : INFO  base  _exec_single_context : 1901 - select pg_catalog.version()
+13-12-2023 10:57:52 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:57:52 : INFO  base  _exec_single_context : 1901 - select current_schema()
+13-12-2023 10:57:52 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:57:52 : INFO  base  _exec_single_context : 1901 - show standard_conforming_strings
+13-12-2023 10:57:52 : INFO  base  _exec_single_context : 1906 - [raw sql] ()
+13-12-2023 10:57:52 : INFO  base  _begin_impl : 1091 - BEGIN (implicit)
+13-12-2023 10:57:52 : INFO  base  _exec_single_context : 1901 - SELECT urls.id, urls.created_at, urls.original_url, urls.deleted 
+FROM urls 
+WHERE urls.id = $1::UUID
+13-12-2023 10:57:52 : INFO  base  _exec_single_context : 1906 - [generated in 0.00095s] ('b10346fe-8b06-4d27-824c-3980ced6641f',)
+13-12-2023 10:57:52 : INFO  url  get_origin_url : 20 - Get url b10346fe-8b06-4d27-824c-3980ced6641f
+13-12-2023 10:57:52 : INFO  url  get_origin_url : 25 - Url is deleted b10346fe-8b06-4d27-824c-3980ced6641f
+13-12-2023 10:57:52 : INFO  base  _rollback_impl : 1117 - ROLLBACK
+13-12-2023 10:58:59 : INFO  main  <module> : 18 - Start server on http://127.0.0.1:8080
+13-12-2023 10:59:02 : INFO  url  get_origin_url : 20 - Get url b10346fe-8b06-4d27-824c-3980ced6641f
+13-12-2023 10:59:02 : INFO  url  get_origin_url : 25 - Url is deleted b10346fe-8b06-4d27-824c-3980ced6641f
+13-12-2023 10:59:21 : INFO  url  delete_url : 52 - Delete url 264f53b3-d649-4a00-8dc5-912c46842c34
+13-12-2023 10:59:33 : INFO  ping_db  ping : 17 - Ping database
+13-12-2023 10:59:49 : INFO  url  get_status : 68 - Get status of url e3fe4e72-18fa-4c60-92f0-4f73e9809497
+13-12-2023 11:01:33 : INFO  url  create_short_url : 41 - Multiple create new urls
+13-12-2023 11:27:08 : INFO  main  <module> : 18 - Start server on http://127.0.0.1:8080
