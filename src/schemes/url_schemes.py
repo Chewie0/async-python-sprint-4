@@ -28,7 +28,7 @@ class UrlResponse(UrlBase):
 
     @computed_field
     def short_url(self) -> str:
-        return f'http://{settings.PROJECT_HOST}:{settings.PROJECT_PORT}/api/v1/urls/{self.id}'
+        return f'http://{settings.project_host}:{settings.project_port}/api/v1/urls/{self.id}'
 
     class Config:
         populate_by_name = True

@@ -18,7 +18,7 @@ def event_loop():
 @pytest_asyncio.fixture(scope="function")
 async def client():
     async with AsyncClient(
-            app=app, base_url=f'http://{settings.PROJECT_HOST}:{settings.PROJECT_PORT}') as c:
+            app=app, base_url=f'http://{settings.project_host}:{settings.project_port}') as c:
         yield c
 
 
