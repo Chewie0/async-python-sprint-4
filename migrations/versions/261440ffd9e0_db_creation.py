@@ -1,8 +1,8 @@
 """DB creation
 
-Revision ID: 776553ba4212
+Revision ID: 261440ffd9e0
 Revises: 
-Create Date: 2023-12-11 23:26:42.870559
+Create Date: 2023-12-14 19:19:54.096634
 
 """
 from typing import Sequence, Union
@@ -13,7 +13,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = '776553ba4212'
+revision: str = '261440ffd9e0'
 down_revision: Union[str, None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
@@ -26,14 +26,13 @@ def upgrade() -> None:
     sa.Column('created_at', sa.DateTime(), nullable=True),
     sa.Column('original_url', sqlalchemy_utils.types.url.URLType(), nullable=False),
     sa.Column('deleted', sa.Boolean(), nullable=True),
-    sa.PrimaryKeyConstraint('id'),
-    sa.UniqueConstraint('original_url')
+    sa.PrimaryKeyConstraint('id')
     )
     op.create_index(op.f('ix_urls_created_at'), 'urls', ['created_at'], unique=False)
     op.create_table('urls_clicks',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('url_id', sa.UUID(), nullable=True),
-    sa.Column('client_host', sa.String(), nullable=False),
+    sa.Column('client_host', sa.String(length=50), nullable=False),
     sa.Column('client_port', sa.Integer(), nullable=False),
     sa.Column('created_at', sa.DateTime(), nullable=True),
     sa.ForeignKeyConstraint(['url_id'], ['urls.id'], ondelete='CASCADE'),
