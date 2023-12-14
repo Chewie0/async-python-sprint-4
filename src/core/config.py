@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     project_name: str = 'short-url-service'
     project_host: str = '127.0.0.1'
     project_port: int = 8080
-    BASE_DIR: str = Field(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), env='BASE_DIR')
+    base_dir: str = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     db_dsn: str = ...
     db_echo: bool = False
 
