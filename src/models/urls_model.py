@@ -11,7 +11,7 @@ class UrlsClick(Base):
     __tablename__ = 'urls_clicks'
     id = Column(Integer, primary_key=True)
     url_id = Column(ForeignKey('urls.id', ondelete='CASCADE'))
-    client_host = Column(String, nullable=False)
+    client_host = Column(String(50), nullable=False)
     client_port = Column(Integer, nullable=False)
     created_at = Column(DateTime, default=datetime.utcnow)
 

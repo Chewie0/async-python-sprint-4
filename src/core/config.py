@@ -4,11 +4,12 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = Field('short-url-service', env='PROJECT_NAME')
-    PROJECT_HOST: str = Field('127.0.0.1', env='PROJECT_HOST')
-    PROJECT_PORT: str = Field('8080', env='PROJECT_HOST')
+    project_name: str = 'short-url-service'
+    project_host: str = '127.0.0.1'
+    project_port: int = 8080
     BASE_DIR: str = Field(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), env='BASE_DIR')
-    DB_DSN: str = Field(env='DB_DSN')
+    db_dsn: str = ...
+    db_echo: bool = False
 
     class Config:
         env_file = '.env'

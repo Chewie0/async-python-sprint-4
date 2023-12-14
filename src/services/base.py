@@ -4,11 +4,12 @@ from fastapi import Request as ClientRequest
 from pydantic import BaseModel
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, func
+from abc import ABC
 
 from src.db.db import Base
 
 
-class Repository:
+class Repository(ABC):
 
     def get(self, *args, **kwargs):
         raise NotImplementedError
@@ -37,7 +38,7 @@ UpdateSchemaType = TypeVar("UpdateSchemaType", bound=BaseModel)
 
 
 class RepositoryDB(Repository, Generic[
-    ModelType, ClickModelType, CreateSchemaType, MultiCreateSchemaType]):  # , MultiCreateSchemaType, RequestTypeModel
+    ModelType, ClickModelType, CreateSchemaType, MultiCreateSchemaType]):
 
     def __init__(self, model: Type[ModelType], request: Type[ModelType]):
         self._model = model
